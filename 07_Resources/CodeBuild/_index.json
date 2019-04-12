@@ -2,7 +2,7 @@
 	"CodeBuildWebpageHome": {
 		"Type": "AWS::CodeBuild::Project",
 		"Properties": {
-			"Name": "front_end_webpage_home",
+			"Name": "gatti_io_front_end",
 			"ServiceRole": { "Fn::GetAtt": ["CodeBuildWebpageHomeRole", "Arn"] },
 			"TimeoutInMinutes": 60,
 			"Source": {

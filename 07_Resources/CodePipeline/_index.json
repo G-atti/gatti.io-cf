@@ -2,7 +2,7 @@
 	"PipelineWebpageHome": {
 		"Type": "AWS::CodePipeline::Pipeline",
 		"Properties": {
-			"Name": "front_end_gatti_io",
+			"Name": "gatti_io_front_end",
 			"ArtifactStore": {
 				"Location": { "Ref": "CodePipelineArtifacts" },
 				"Type": "S3"
