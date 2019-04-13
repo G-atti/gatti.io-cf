@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "All the resources needed for gatti.io",
+	"Description": "All the resources needed for david.gatti.io",
 	"Parameters": {
 		"CodePipelineArtifacts": {
 			"Description": "The S3 bucket name where CodePipeline will store the artifacts (this is needed only by CP to work, and pass task results to the next stage).",
@@ -273,10 +273,10 @@
 							],
 							"Resource": [
 								{
-									"Fn::Sub": "arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/codebuild/front_end_webpage_home"
+									"Fn::Sub": "arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/codebuild/gatti_io_front_end"
 								},
 								{
-									"Fn::Sub": "arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/codebuild/front_end_webpage_home:*"
+									"Fn::Sub": "arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/codebuild/gatti_io_front_end:*"
 								}
 							]
 						}
